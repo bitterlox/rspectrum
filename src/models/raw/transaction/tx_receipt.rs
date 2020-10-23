@@ -2,7 +2,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Default, Debug, Clone, PartialEq, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
-pub struct TxReceipt {
+pub struct Receipt {
     pub block_hash: String,
     pub block_number: i64,
     pub contract_address: String,

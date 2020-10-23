@@ -1,7 +1,6 @@
-mod token_transfer;
-mod tx;
-mod tx_receipt;
+pub mod tx;
+pub mod tx_receipt;
 
-pub use token_transfer::ERC20TokenTransfer;
+pub use crate::models::token_transfer::ERC20TokenTransfer;
 pub use tx::Transaction;
-pub use tx_receipt::{Log, TxReceipt};
+pub use tx_receipt::{Log, Receipt};
